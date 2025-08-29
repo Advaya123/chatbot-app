@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Initialize Google AI Client
+// Google AI Client
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
-// ✅ Normal endpoint (non-streaming, optional)
+// Normal endpoint (non-streaming, optional)
 app.post("/api/chat", async (req, res) => {
   const { prompt } = req.body;
 
@@ -50,7 +50,7 @@ Question: ${prompt}
   }
 });
 
-// ✅ Streaming endpoint
+// Streaming endpoint
 app.post("/api/chat/stream", async (req, res) => {
   const { prompt } = req.body;
 
