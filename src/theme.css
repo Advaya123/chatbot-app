@@ -1,0 +1,95 @@
+/* Light Mode defaults handled by Tailwind */
+
+/* Dark Mode overrides */
+.dark {
+  background-color: #1a202c;
+  color: #f8f9fa;
+}
+
+/* Header */
+.dark .header {
+  background-color: #2d3748;
+  color: white;
+}
+
+/* Toggle Button */
+.dark .toggle-btn {
+  background-color: #4a5568;
+  color: #fff;
+}
+
+/* Chat container */
+.dark .chat-container {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* Assistant bubble */
+.assistant-bubble {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+.dark .assistant-bubble {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+/* User bubble */
+.user-bubble {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+}
+
+/* Inline code */
+.inline-code {
+  background-color: #e5e7eb;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+.dark .inline-code {
+  background-color: #374151;
+}
+
+/* Typing dots */
+.dot {
+  background-color: #9ca3af;
+  border-radius: 9999px;
+  animation: bounce 1.4s infinite;
+}
+.dark .dot {
+  background-color: #d1d5db;
+}
+
+/* Input */
+.input-bar {
+  background-color: #e5e7eb;
+}
+.dark .input-bar {
+  background-color: #1f2937;
+}
+
+.input-form {
+  background-color: #d1d5db;
+}
+.dark .input-form {
+  background-color: #374151;
+}
+
+.input-text {
+  color: #111827;
+}
+.dark .input-text {
+  color: #f9fafb;
+}
+
+.send-btn {
+  background-color: #2563eb;
+  color: #fff;
+}
+.send-btn:hover {
+  background-color: #1d4ed8;
+}
+.send-btn:disabled {
+  background-color: #6b7280;
+}
