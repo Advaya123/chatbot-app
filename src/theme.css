@@ -1,6 +1,6 @@
-/* Light Mode defaults handled by Tailwind */
-
+/* Light Mode default*/
 /* Dark Mode overrides */
+
 .dark {
   background-color: #1a202c;
   color: #f8f9fa;
